@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Cardinal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pTcIdpM91EkwSiqfOgLV7V8h6B/AB0l+NzvZ0U6W8G6evY/TIJdNtnw32L1//tv2cB+UuAJ6MkJDvGgW6U8eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/solution.css">
+  
+  <style>
+    
+  .border-bottom {
+    border-bottom: var(--bs-border-width) var(--bs-border-style) #dee2e600!important;
+    border-bottom-width: ;
+    border-bottom-style: ;
+    border-bottom-color: ;
+    }
+    
+    body {
+    margin: 1px;
+    }
+    
+  #nave a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+#nave a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, rgb(253, 253, 254), rgb(249, 250, 249));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#nave a:hover::after {
+  transform: scaleX(1);
+}
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+  <!-- Title -->
+  <section id="title" class="gradient-background">
+    <header class="p-0 mb-0 border-bottom">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          </a>
+        
+          <ul class="nav col-10 col-lg-auto ms-lg-auto mb-2 justify-content-center mb-md-0" id="nave">
+            <li><a href="#features" class="nav-link px-2 link-body-emphasis">Services</a></li>
+            <li><a href="#testimonial" class="nav-link px-2 link-body-emphasis">Customers</a></li>
+            <li><a href="#footer" class="nav-link px-2 link-body-emphasis">Contacts</a></li>
+          </ul>
+        
+          
+    
+        </div>
+      </div>
+    </header>
+  <div class="container col-xxl-8 px-4 pt-1">
+    <div class="row flex-lg-row-reverse align-items-center g-5 pt-1">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./images/pic.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Cardinal Systems</h1>
+        <p class="lead">Where IT Support Services differs from 'Managed IT Services'; is that this is a more adhoc support platform 'call as you need' where you simply get in touch with the team here when issues arise.
+
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-light btn-lg px-4 me-md-2">Get a Quote</button>
+          <button type="button" class="btn btn-outline-light btn-lg px-4">Get IT Support</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  <!-- Features -->
+  <section id="features">
+    <div class="container">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+          </div>
+          <div>
+            <h3 class="fs-2">Home Automation</h3>
+            <p id="feat1">Experience a smarter home with Cardinal Systems. Our home automation solutions offer complete control of your home's temperature, lighting, security, and entertainment systems. Our easy-to-use technology can be customized to fit your lifestyle. Contact us today to design and install your very own smart home system.</p>
+           
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+          </div>
+          <div>
+            <h3 class="fs-2">Software Development</h3>
+            <p>At Cardinal Systems, we offer top-of-the-line software development services to help your business stay ahead of the competition. Our team of experienced developers will work closely with you to create customized software solutions.Contact us today to learn more about how we can help your business succeed.</p>
+            
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+          </div>
+          <div>
+            <h3 class="fs-2">IT Support</h3>
+            <p>Cardinal Systems offers reliable and efficient IT support to ensure that your business runs smoothly. Our team of experts provides a range of services, including network monitoring, data backup and recovery, and software installation and maintenance.Contact us today to learn more about our IT support services.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--first--->
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="images/software/O-que-e-software.png.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Transform your vision into technology</h1>
+        <p class="lead">Upgrade your lifestyle with our innovative home automation solutions. Control your home from anywhere with ease, enhance security with intelligent monitoring, and optimize energy consumption with intelligent automation. Enjoy the ultimate comfort and convenience with our smart technology.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get a quote</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get IT Support</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!--secondy-->
+  
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+      <div class="col-18 col-sm-10 col-lg-6">
+        <img src="images/home automation/tela.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="1200" height="1200" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Smartify your home and simplify your life with home automation.</h1>
+        <p class="lead">Investing in home automation can enhance your lifestyle by making everyday tasks easier and more convenient. With our reliable and efficient systems, you can control your lighting, climate, security, and entertainment from anywhere. Save time, increase energy efficiency, and improve your home's value. Trust us for seamless integration and expert installation.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--third-->
+  
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="images/img1/women it.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500" height="300" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Supporting Your Digital Life</h1>
+        <p class="lead">Streamline your business and improve productivity with our reliable IT support services. Our team of experts provides customized solutions to meet your unique needs, ensuring your technology is always running smoothly. Get peace of mind knowing that your business is in good hands with our comprehensive IT support."</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        
+        </div>
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get a quote</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get IT Support</button>
+      </div>
+    </div>
+  </div>
+  
+  
+    <!-- /END THE FEATURETTES -->
+  
+  
+  
+  <!----New section-->
+  
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Take control of your home from anywhere</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Upgrade your lifestyle with our innovative home automation solutions. Control your home from anywhere with ease, enhance security with intelligent monitoring, and optimize energy consumption with intelligent automation. Enjoy the ultimate comfort and convenience with our smart technology.
+  
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 60vh;max-width: 1000px;margin: 0 auto;">
+     
+  
+      <div class="container px-5">
+        <video controls poster="images/home automation/tela.png">
+          <source src="video/home automation-video.mp4" type="video/mp4">
+          <source src="video/demo.webm" type="video/webm">
+          <source src="video/demo.ogv" type="video/ogg">
+          <object>
+            <embed src="demo.mp4" type="application/x-shockwave-flash" 
+            allowfullscreen="false" allowscriptaccess="always">  		
+          </object>
+          Formato não suportado  
+        </video>
+         
+        
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+ 
+  <!-- Testimonial -->
+  <section id="testimonial">
+    <div class="my-9">
+      <div class="p-5 text-center bg-body-tertiary">
+        <div class="container py-5">
+          <h2 class="text-body-emphasis">What Our Clients Says</h2>
+
+                    
+
+          <p class="col-lg-8 mx-auto lead mt-2">
+          
+          </p>
+        </div>
+      
+        <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <!--section id="row" class="gradient-background"-->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images/testemunhos/Nilza Chipe.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h3>Nilza Chipe</h3>
+            <h4 id="t1">Administrator of the Institutional Development Division of the FNDS</h4>
+            <p id="t2">Among the companies that work with automated machines in Mocambique, I consider Cardinal Systems one of the best, with completely sophisticated and modern equipment, without counting the delivery of the work in the stipulated time. Cardinal Systems had my admiration and respect.</p>
+            <!--p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p-->
+            <div class="stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+          
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images/testemunhos/claudio1.png" alt="Generic placeholder image" width="140" height="140">
+            <h3>Claudio James</h3>
+            <h4 id="t1">General Manager of Petrogas</h4>
+
+            <p id="t2">In addition to optimal and prompt feedback on task execution, Cardinal has an excellent team. I do not doubt that I would recommend more than once to companies that require computer services.</p>
+            <!--p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p-->
+            <div class="stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images/testemunhos/hortencia-mta.jpeg" alt="Generic placeholder image" width="140" height="140">
+            <h3>Hortência Massinga</h3>
+            <h4 id="t1">Director of the Department of Systems, Information Technology and Document Management of the Ministry of Land and Environment</h4>
+
+            <p id="t2">Over the course of this journey, Cardinal Systems has presented very satisfactory results. We can count on fast and efficient solutions for maintenance of the data network infrastructure and I feel completely confident in working as cardinal.</p>
+            <!--p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p-->
+            <div class="stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      </section>
+
+        <!-- Nossos servicos-->
+
+        <div class="container">
+          <div class="my-9, p-5 text-center">
+            
+              <div class="row">
+                <h1 id="cl1">Our Clients</h1>
+                <div class="col-lg-3 col-sm-12">
+                  <img src="images/Petromoc-removebg-preview.png" alt="techcrunch" height="46">
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                  <img src="images/jmc10.png" alt="mashable" height="46">
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                  <img src="images/ilulu (1).jpeg" alt="tnw" height="40">
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                  <img src="images/petrogas  - 2123.png" alt="bizinsider" height="42">
+                </div>
+            
+              </div>
+            </div>
+      </div>
+    
+    </div>
+  
+  <!-- Pricing -->
+  <section id="pricing">
+
+  </section>
+  <!-- Footer -->
+  <section id="footer" class="gradient-background">
+    <div class="container ">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
+        <div class="col mb-3">
+          
+          <p class="text-body-secondary">Cardinal Systems</p>
+        </div>
+
+        <div class="col mb-3">
+
+        </div>
+
+        <div class="col mb-3">
+          <h5>LINKS</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Services</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Customers</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contats</a></li>
+          </ul>
+        </div>
+
+         <div class="col mb-3">
+          <h5>SERVICES</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home Automation</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Software Development</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Electronic Security</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">IT Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>CONTACT</h5>
+          <ul class="nav flex-column">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-houses-fill" viewBox="0 0 16 16">
+              <path d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.51 2.51 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354L7.207 1Z"/>
+              <path d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708L8.793 2Z"/>
+            </svg> Mozambique, Maputo Cidade, Av. Marginal </p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+            </svg> helpdesk@cardinalt.com</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            </svg> +258 878030030</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg> +258 855656570</p>
+          </ul>
+        </div>
+       
+        
+        
+      </footer>
+    </div>
+  </section>
+</body>
+
+</html>
