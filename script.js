@@ -33,3 +33,29 @@ for (let i = 0; i < images.length; i++) {
 
     const img = document.querySelector('.fade-in');
     img.classList.add('show');
+
+
+   
+    // Check if the form was submitted
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      
+      // Get the form data
+      $email = $_POST['email'];
+      $contact = $_POST['contact'];
+      $system = $_POST['system'];
+    
+      // Compose the email message
+      $to = 'helpdesk@cardinalt.com';
+      $subject = 'IT Support Request';
+      $message = "Email: $email\nContact: $contact\nPreferred System: $system";
+      
+      // Send the email
+      mail($to, $subject, $message);
+      
+      // Redirect to a success page
+      header('Location: success.html');
+      exit();
+    }
+    
+    
+    
