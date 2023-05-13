@@ -284,8 +284,6 @@ body{margin-top:20px;
 
 
  
-  
-
 
 .container12{
   display: flex;
@@ -317,6 +315,31 @@ body{margin-top:20px;
 #feat1 {
   font-family: system-ui light, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
+}
+
+
+h3{
+  color: black;
+  text-decoration: none;
+}
+
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color:#1f95f2;
+
+}
+
+#it-support {
+  margin-bottom: 50px;
+}
+
+#it-support .col-lg-6 {
+  margin-top: 50px;
 }
 
 
@@ -440,5 +463,11 @@ margin-right: 100px;
 }
 
 
-/*---------first section-------*/
+/*---------our clients-------*/
 
+.black {
+  filter: brightness(0%);
+}
+
+
+/*----efeito das imagens --fade in--*/

@@ -12,7 +12,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pTcIdpM91EkwSiqfOgLV7V8h6B/AB0l+NzvZ0U6W8G6evY/TIJdNtnw32L1//tv2cB+UuAJ6MkJDvGgW6U8eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="path/to/script.js"></script>
+	<script src="script.js"></script>
+  
   <link rel="stylesheet" href="./css/solution.css">
+
   
   <style>
     
@@ -106,9 +111,9 @@
             <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
           </div>
           <div>
-            <h3 class="fs-2">Home Automation</h3>
-            <p id="feat1">Experience a smarter home with Cardinal Systems. Our home automation solutions offer complete control of your home's temperature, lighting, security, and entertainment systems. Our easy-to-use technology can be customized to fit your lifestyle. Contact us today to design and install your very own smart home system.</p>
-           
+            <h3 class="fs-2"><a href="#Home-automation">Home Automation</a></h3>
+            <p idy>Experience a smarter home with Cardinal Systems. Our home automation solutions offer complete control of your home's temperature, lighting, security, and entertainment systems. Our easy-to-use technology can be customized to fit your lifestyle. Contact us today to design and install your very own smart home system.</p>
+            
           </div>
         </div>
         <div class="col d-flex align-items-start">
@@ -116,7 +121,7 @@
             <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
           </div>
           <div>
-            <h3 class="fs-2">Software Development</h3>
+            <h3 class="fs-2"><a href="#software">Software Development</a></h3>
             <p>At Cardinal Systems, we offer top-of-the-line software development services to help your business stay ahead of the competition. Our team of experienced developers will work closely with you to create customized software solutions.Contact us today to learn more about how we can help your business succeed.</p>
             
           </div>
@@ -126,7 +131,7 @@
             <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
           </div>
           <div>
-            <h3 class="fs-2">IT Support</h3>
+            <h3 class="fs-2"><a href="#it-support"> IT Support</a></h3>
             <p>Cardinal Systems offers reliable and efficient IT support to ensure that your business runs smoothly. Our team of experts provides a range of services, including network monitoring, data backup and recovery, and software installation and maintenance.Contact us today to learn more about our IT support services.</p>
             
           </div>
@@ -136,7 +141,8 @@
   </section>
 
 <!--first--->
-<div class="container col-xxl-8 px-4 py-5">
+<section id="software">
+  <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src="images/software/O-que-e-software.png.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -151,11 +157,11 @@
       </div>
     </div>
   </div>
-  
+</section>
   
   
   <!--secondy-->
-  
+<section id="Home-automation">
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row align-items-center g-5 py-5">
       <div class="col-18 col-sm-10 col-lg-6">
@@ -170,10 +176,11 @@
       </div>
     </div>
   </div>
+</section>
   
   
   <!--third-->
-  
+<section id="it-support" class="m-2">
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
@@ -190,6 +197,7 @@
       </div>
     </div>
   </div>
+</section>
   
   
     <!-- /END THE FEATURETTES -->
@@ -212,7 +220,7 @@
      
   
       <div class="container px-5">
-        <video controls poster="images/home automation/tela.png">
+        <video id="home-automation-video" controls poster="images/home automation/tela.png">
           <source src="video/home automation-video.mp4" type="video/mp4">
           <source src="video/demo.webm" type="video/webm">
           <source src="video/demo.ogv" type="video/ogg">
