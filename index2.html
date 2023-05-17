@@ -95,7 +95,7 @@
         </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" class="btn btn-light btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a Quote</button>
-          <button type="button" class="btn btn-outline-light btn-lg px-4">Get IT Support</button>
+          <button type="button" class="btn btn-outline-light btn-lg px-4" data-bs-toggle="modal" data-bs-target="#supportModal">Get IT Support</button>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
         <p class="lead">Upgrade your lifestyle with our innovative home automation solutions. Control your home from anywhere with ease, enhance security with intelligent monitoring, and optimize energy consumption with intelligent automation. Enjoy the ultimate comfort and convenience with our smart technology.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a quote</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get IT Support</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4"data-bs-toggle="modal" data-bs-target="#supportModal">Get IT Support</button>
           
         </div>
       </div>
@@ -194,11 +194,11 @@
         
         </div>
           <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a quote</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get IT Support</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#supportModal">Get IT Support</button>
           <!---modal-->
           
 
-<!-- Modal -->
+<!-- Modal -- Get a quote -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -226,6 +226,11 @@
                         <option value="Linux">IT Support</option>
                       </select>
                     </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Message</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+          
         
                   </form>
                 </div>
@@ -243,6 +248,63 @@
     </div>
   </div>
 </section>
+
+
+
+
+<!-- Modal -- Get it support -->
+<div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">IT Support</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="contact" class="form-label">Contact</label>
+            <input type="text" class="form-control" id="contact" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="preferredSystem" class="form-label">System</label>
+            <select class="form-select" id="preferredSystem">
+              <option selected disabled>Select the issue</option>
+              <option value="Windows">Home automation</option>
+              <option value="MacOS">Software</option>
+              <option value="Linux">Hardware</option>
+              <option value="Linux">Network</option>
+              <option value="Linux">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Describe</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</section>
+
+
   
   
     <!-- /END THE FEATURETTES -->
